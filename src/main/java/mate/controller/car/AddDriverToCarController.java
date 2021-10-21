@@ -29,8 +29,8 @@ public class AddDriverToCarController extends HttpServlet {
             throws IOException {
         long driverId = Long.parseLong(req.getParameter("driver_id"));
         long carId = Long.parseLong(req.getParameter("car_id"));
-        Driver driver = driverService.get(driverId);
-        Car car = carService.get(carId);
+        Driver driver = driverService.get(driverId).get();
+        Car car = carService.get(carId).get();
         carService.addDriverToCar(driver, car);
         resp.sendRedirect("/cars/drivers/add");
     }
