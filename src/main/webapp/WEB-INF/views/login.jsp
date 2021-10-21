@@ -29,7 +29,7 @@
     </tr>
     <tr>
         <th colspan="3">
-            <a href="${pageContext.request.contextPath}/drivers/add">Register</a>
+            <a href="${pageContext.request.contextPath}/drivers/add"><h4 style="color:#edb749">Register</h4></a>
         </th>
     </tr>
     <tr>
